@@ -1,14 +1,7 @@
-<script>
-	import '../app.postcss';
-
-	// Your selected Skeleton theme:
-	import '@skeletonlabs/skeleton/themes/theme-vintage.css';
-
-	// This contains the bulk of Skeletons required styles:
-	import '@skeletonlabs/skeleton/styles/skeleton.css';
-
-	// Finally, your application's global stylesheet (sometimes labeled 'app.css')
-	import '../app.postcss';
+<script lang="ts">
+	import '../app.css';
 </script>
 
-<slot />
+<div class="min-h-screen flex flex-col">
+	<slot />
+</div>

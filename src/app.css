@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+import *,
+html,
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: pokemon;
+	src: url('fonts/Pokemon Hollow.ttf') format('opentype');
+}
