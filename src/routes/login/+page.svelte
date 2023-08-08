@@ -5,12 +5,12 @@
 	import { signOut } from 'firebase/auth';
 </script>
 
-<h1 class="text-2xl font-pokemon tracking-[0.4rem] mb-4">Login</h1>
+<h1 class="text-2xl font-pokemon tracking-[0.4rem] mb-4 cursor-pointer">Login</h1>
 
 {#if $user}
-	<h2 class="card-title">Welcome , {$user.displayName}</h2>
-	<p class="text-center text-success">you are logged in</p>
-	<button class="btn" on:click={() => signOut(auth)}>Sign out</button>
+	<h2 class="card-title">Welcome, {$user.displayName}</h2>
+	<p class="text-center text-success">You are logged in</p>
+	<button class="btn btn-neutral" on:click={() => signOut(auth)}>Sign out</button>
 {:else}
 	<button class="btn rounded-2xl hover:bg-white/10" on:click={signInWithGoogle}>
 		<Icon icon="uim:google" width="35" /> Sign in With google

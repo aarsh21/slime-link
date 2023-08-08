@@ -29,8 +29,8 @@ function userStore() {
 			subscribe
 		};
 	}
-	const { subscribe } = writable(auth?.currentUser, (set) => {
-		onAuthStateChanged(auth, (user) => {
+	const { subscribe } = writable(auth?.currentUser ?? null, (set) => {
+		unsubscribe = onAuthStateChanged(auth, (user) => {
 			set(user);
 		});
 		return () => unsubscribe();
