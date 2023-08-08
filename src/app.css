@@ -10,5 +10,5 @@ body {
 }
 @font-face {
 	font-family: pokemon;
-	src: url('fonts/Pokemon Hollow.ttf') format('opentype');
+	src: url('/fonts/Pokemon Hollow.ttf') format('opentype');
 }
