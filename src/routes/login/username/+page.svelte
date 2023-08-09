@@ -61,8 +61,8 @@
 	<h2 class="text-2xl font-pokemon tracking-[0.4rem] mb-4 cursor-pointer">Username</h2>
 
 	{#if $userData?.username}
-		<p class="text-black bg-success p-2">
-			your username is <span class="text-l text-white">@{$userData.username}</span>
+		<p class=" p-2">
+			your username is <span class="text-l bg-success">@{$userData.username}</span>
 		</p>
 
 		<p>usernames cannot be changed !</p>
@@ -70,6 +70,7 @@
 			<a href="/login/photo">Upload profile Image</a>
 		</button>
 	{:else}
+		<h2 class="card-title mb-2">Enter a new Username</h2>
 		<form class="w-2/5" on:submit|preventDefault={confirmUsername}>
 			<input
 				type="text"
@@ -95,7 +96,6 @@
 						@{username} is not available
 					</p>
 				{/if}
-
 				{#if isAvailable}
 					<button class="btn btn-success">Confirm username @{username} </button>
 				{/if}
