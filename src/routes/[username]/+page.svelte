@@ -11,8 +11,8 @@
 </svelte:head>
 <ThemeSelect />
 <main class="prose text-center mx-auto mt-8">
-	<h1 class="text-7xl text-primary-focus mb-5">
-		@{data.username}
+	<h1 class="text-8xl font-pokemon tracking-[0.4rem] mb-5 cursor-pointer text-primary">
+		@{data.username} <span>{'<3'}</span>
 	</h1>
 
 	<img src={data.photoURL ?? '/user.png'} alt="photoURL" width="256" class="mx-auto" />

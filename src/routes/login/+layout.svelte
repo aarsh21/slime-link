@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import AnimatedRoute from '$lib/components/AnimatedRoute.svelte';
+	import ThemeSelect from '$lib/components/Theme-select.svelte';
 </script>
 
+<ThemeSelect />
 <nav class="flex justify-center my-6">
 	<ul class="steps">
 		<a href="/login" class="step step-primary"> Sign In</a>

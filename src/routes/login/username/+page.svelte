@@ -71,7 +71,7 @@
 		</button>
 	{:else}
 		<h2 class="card-title mb-2">Enter a new Username</h2>
-		<form class="w-2/5" on:submit|preventDefault={confirmUsername}>
+		<form class="w-2/5 text-black" on:submit|preventDefault={confirmUsername}>
 			<input
 				type="text"
 				placeholder="Username"
