@@ -9,6 +9,10 @@ body {
 	box-sizing: border-box;
 }
 @font-face {
-	font-family: pokemon;
-	src: url('/fonts/Pokemon Hollow.ttf') format('opentype');
+	font-family: Montserrat;
+	src: url('/fonts/Montserrat-Regular.ttf') format('opentype');
+}
+@font-face {
+	font-family: DMSans;
+	src: url('/fonts/DMSans-Regular.ttf') format('opentype');
 }

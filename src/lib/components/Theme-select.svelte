@@ -34,9 +34,9 @@
 		class="select select-bordered select-primary w-60 max-w-3xl text-xl capitalize"
 		on:change={set_theme}
 	>
-		<option value="" disabled={current_theme !== ''}> Choose a theme </option>
+		<option class="text-black" value="" disabled={current_theme !== ''}> Choose a theme </option>
 		{#each themes as theme}
-			<option value={theme} class="capitalize">{theme}</option>
+			<option value={theme} class="capitalize text-black">{theme}</option>
 		{/each}
 	</select>
 </div>

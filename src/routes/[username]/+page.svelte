@@ -11,13 +11,13 @@
 </svelte:head>
 <ThemeSelect />
 <main class="prose text-center mx-auto mt-8">
-	<h1 class="text-8xl font-pokemon tracking-[0.4rem] mb-5 cursor-pointer text-primary">
-		@{data.username} <span>{'<3'}</span>
+	<h1 class="text-8xl font-Montserrat font-black mb-5 cursor-pointer">
+		@{data.username}
 	</h1>
 
 	<img src={data.photoURL ?? '/user.png'} alt="photoURL" width="256" class="mx-auto" />
 
-	<p class="text-xl my-8 text-secondary">{data.bio ?? 'no bio yet...'}</p>
+	<p class="text-xl my-8">{data.bio ?? 'no bio yet...'}</p>
 	<ul class="list-none">
 		{#each data.links as item}
 			{@debug item}

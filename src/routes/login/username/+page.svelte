@@ -58,11 +58,11 @@
 </script>
 
 <AuthCheck>
-	<h2 class="text-2xl font-pokemon tracking-[0.4rem] mb-4 cursor-pointer">Username</h2>
+	<h2 class="text-4xl font-Montserrat font-black mb-4 cursor-pointer">Username</h2>
 
 	{#if $userData?.username}
 		<p class=" p-2">
-			your username is <span class="text-l bg-success">@{$userData.username}</span>
+			your username is <span class="text-l bg-success text-black">@{$userData.username}</span>
 		</p>
 
 		<p>usernames cannot be changed !</p>

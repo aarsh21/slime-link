@@ -5,7 +5,7 @@
 	import { signOut } from 'firebase/auth';
 </script>
 
-<h1 class="text-2xl font-pokemon tracking-[0.4rem] mb-4 cursor-pointer">Login</h1>
+<h1 class="text-4xl font-Montserrat mb-4 font-black cursor-pointer">Login</h1>
 
 {#if $user}
 	<h2 class="card-title">Welcome, {$user.displayName}</h2>

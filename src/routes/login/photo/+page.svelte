@@ -21,7 +21,7 @@
 	}
 </script>
 
-<h2 class="text-2xl font-pokemon tracking-[0.4rem] mb-4 cursor-pointer">Photo</h2>
+<h2 class="text-4xl font-Montserrat font-black mb-4 cursor-pointer">Photo</h2>
 <AuthCheck>
 	<h2 class="card-title">Upload a Profile Photo</h2>
 

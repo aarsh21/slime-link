@@ -4,7 +4,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				pokemon: 'pokemon'
+				Montserrat: 'Montserrat',
+				DMSans: 'DMSans'
 			}
 		}
 	},
