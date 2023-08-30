@@ -8,7 +8,7 @@
 	import { arrayRemove, arrayUnion, doc, setDoc, updateDoc } from 'firebase/firestore';
 	import { writable } from 'svelte/store';
 
-	const icons = ['X', 'YouTube', 'TikTok', 'LinkedIn', 'GitHub', 'Custom'];
+	const icons = ['Twitter', 'YouTube', 'TikTok', 'LinkedIn', 'GitHub', 'Custom'];
 	const formDefaults = {
 		icon: 'custom',
 		title: '',
