@@ -7,12 +7,16 @@
 </script>
 
 <svelte:head>
-	<title>@{data.username} Links !</title>
+	<title>@{data.username} Links</title>
 	<meta name="description" content={data.bio} />
 </svelte:head>
-<ThemeSelect />
+
 <main class="prose text-center mx-auto mt-8">
-	<h1 class="text-8xl font-Montserrat font-black mb-5 cursor-pointer">
+	<div class="mb-3">
+		<ThemeSelect />
+	</div>
+
+	<h1 class="text-7xl mb-5">
 		@{data.username}
 	</h1>
 
@@ -21,7 +25,7 @@
 	<p class="text-xl my-8">{data.bio ?? 'no bio yet...'}</p>
 	<ul class="list-none">
 		{#each data.links as item}
-			<li>
+			<li class="my-2">
 				<UserLink {...item} />
 			</li>
 		{/each}

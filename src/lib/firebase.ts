@@ -13,28 +13,34 @@ const firebaseConfig = {
 	appId: '1:490757841503:web:c3776b180187e81403b1ea',
 	measurementId: 'G-W86Z91VFTS'
 };
-
+// Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const db = getFirestore();
 export const auth = getAuth();
 export const storage = getStorage();
 
+/**
+ * @returns a store with the current firebase user
+ */
 function userStore() {
 	let unsubscribe: () => void;
 
 	if (!auth || !globalThis.window) {
-		console.log('Auth is not initialized in the browser ');
+		console.warn('Auth is not initialized or not in browser');
 		const { subscribe } = writable<User | null>(null);
 		return {
 			subscribe
 		};
 	}
+
 	const { subscribe } = writable(auth?.currentUser ?? null, (set) => {
 		unsubscribe = onAuthStateChanged(auth, (user) => {
 			set(user);
 		});
+
 		return () => unsubscribe();
 	});
+
 	return {
 		subscribe
 	};
@@ -42,6 +48,11 @@ function userStore() {
 
 export const user = userStore();
 
+/**
+ * @param  {string} path document path or reference
+ * @param  {any} startWith optional default data
+ * @returns a store with realtime updates on document data
+ */
 export function docStore<T>(path: string) {
 	let unsubscribe: () => void;
 
@@ -66,6 +77,7 @@ interface UserData {
 	username: string;
 	bio: string;
 	photoURL: string;
+	published: boolean;
 	links: any[];
 }
 

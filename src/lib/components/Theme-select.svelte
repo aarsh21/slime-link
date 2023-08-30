@@ -31,12 +31,12 @@
 	<select
 		bind:value={current_theme}
 		data-choose-theme
-		class="select select-bordered select-primary w-60 max-w-3xl text-xl capitalize"
+		class="select select-bordered select-primary text-red-300 w-30 max-w-3xl text-l capitalize"
 		on:change={set_theme}
 	>
-		<option class="text-black" value="" disabled={current_theme !== ''}> Choose a theme </option>
+		<option class="text-primary" value="" disabled={current_theme !== ''}> Choose a theme </option>
 		{#each themes as theme}
-			<option value={theme} class="capitalize text-black">{theme}</option>
+			<option value={theme} class="capitalize text-info">{theme}</option>
 		{/each}
 	</select>
 </div>
