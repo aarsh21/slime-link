@@ -20,7 +20,7 @@
 		@{data.username}
 	</h1>
 
-	<img src={data.photoURL ?? '/user.png'} alt="photoURL" width="256" class="mx-auto" />
+	<img src={data.photoURL ?? '/user.png'} alt="photoURL" width="256" class="mx-auto rounded-lg" />
 
 	<p class="text-xl my-8">{data.bio ?? 'no bio yet...'}</p>
 	<ul class="list-none">
