@@ -67,7 +67,7 @@
 		<p class="text-sm">(Usernames cannot be changed)</p>
 		<a class="btn btn-primary" href="/login/photo">Upload Profile Image</a>
 	{:else}
-		<form class="w-2/5" on:submit|preventDefault={confirmUsername}>
+		<form class="w-2/3" on:submit|preventDefault={confirmUsername}>
 			<input
 				type="text"
 				placeholder="Username"

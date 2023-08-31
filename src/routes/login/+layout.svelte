@@ -23,7 +23,7 @@
 <AnimatedRoute>
 	<main class="card w-4/6 bg-neutral text-neutral-content mx-auto">
 		<ThemeSelect />
-		<div class="card-body items-center text-center">
+		<div class="card-body justify-center flex-col items-center text-center">
 			<slot />
 		</div>
 	</main>

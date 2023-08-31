@@ -17,6 +17,7 @@
 				<p class="py-6 text-2xl">One simple link to share your entire developer portfolio</p>
 				{#if $userData?.username}
 					<a href="/{$userData.username}/edit" class="btn btn-primary">Edit Profile</a>
+					<a href="/login" class="btn btn-secondary">Log Out</a>
 				{:else}
 					<a href="/login" class="btn btn-primary">Get Started</a>
 					<a href="/Aarsh" class="btn btn-secondary">Example Profile</a>

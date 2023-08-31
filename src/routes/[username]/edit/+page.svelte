@@ -17,6 +17,7 @@
 		'TikTok',
 		'LinkedIn',
 		'GitHub',
+		'spotify',
 		'Custom'
 	];
 	const formDefaults = {
